@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220902 15:06:34.267" rpa="false" schemaversion="3">
+<suite id="s1" name="searchJD" source="C:\Users\iancr\PycharmProjects\pythonProject\searchJD.robot">
+<test id="s1-t1" name="Verify if job is available" line="6">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220902 15:06:34.458" endtime="20220902 15:06:34.458"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.ausy.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220902 15:06:34.458" level="INFO">Opening browser 'chrome' to base url 'https://www.ausy.com/'.</msg>
+<status status="PASS" starttime="20220902 15:06:34.458" endtime="20220902 15:06:38.254"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220902 15:06:38.254" endtime="20220902 15:06:38.389"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="onetrust-accept-btn-handler"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220902 15:06:38.394" level="INFO">Clicking element '//*[@id="onetrust-accept-btn-handler"]'.</msg>
+<status status="PASS" starttime="20220902 15:06:38.391" endtime="20220902 15:06:38.498"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="block-main-navigation"]/div[1]/div/div[1]/ul[1]/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220902 15:06:38.499" level="INFO">Clicking element '//*[@id="block-main-navigation"]/div[1]/div/div[1]/ul[1]/li[1]/a'.</msg>
+<status status="PASS" starttime="20220902 15:06:38.499" endtime="20220902 15:06:40.743"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="search-keyword"]</arg>
+<arg>python automation</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220902 15:06:40.744" level="INFO">Typing text 'python automation' into text field '//*[@id="search-keyword"]'.</msg>
+<status status="PASS" starttime="20220902 15:06:40.744" endtime="20220902 15:06:40.853"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${Variable_to_see_wait_time}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20220902 15:06:40.854" level="INFO">${Variable_to_see_wait_time} = 5 seconds</msg>
+<status status="PASS" starttime="20220902 15:06:40.853" endtime="20220902 15:06:40.854"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class: page-node-type-landing-page &gt;&gt; xpath: //*[@id="header-search-form"]/div[1]/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220902 15:06:40.854" level="INFO">Clicking element 'class: page-node-type-landing-page &gt;&gt; xpath: //*[@id="header-search-form"]/div[1]/div[2]/button'.</msg>
+<status status="PASS" starttime="20220902 15:06:40.854" endtime="20220902 15:06:42.177"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>tag: body &gt;&gt; class: cards__link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220902 15:06:42.178" level="INFO">Clicking element 'tag: body &gt;&gt; class: cards__link'.</msg>
+<status status="PASS" starttime="20220902 15:06:42.178" endtime="20220902 15:06:42.267"/>
+</kw>
+<doc>This case verify</doc>
+<tag>Functional</tag>
+<status status="PASS" starttime="20220902 15:06:34.457" endtime="20220902 15:06:42.268"/>
+</test>
+<doc>Search JD</doc>
+<status status="PASS" starttime="20220902 15:06:34.267" endtime="20220902 15:06:42.269"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="searchJD">searchJD</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
